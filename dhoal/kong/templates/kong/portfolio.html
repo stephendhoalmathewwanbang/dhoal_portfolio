@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Dhoal Mathew W. | Full Stack Django Developer</title>
+    <meta name="description" content="Full stack software engineer experienced in building websites for small and medium-sized businesses. HTML, CSS, Django, Python. Full project management. Let us keep in touch.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'kong/css/portfolio.css' %}">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">Stephen Dhoal Mathew Wanbang</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#deliverables">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <img src="{% static 'kong/images/profile.png' %}" alt="Stephen Dhoal Mathew W." class="hero-profile-img">
+                <span class="hero-badge">Available for new projects</span>
+                <h1 class="hero-title">
+                    Stephen Dhoal Mathew W.<br>
+                    <em>Full Stack Software Engineer</em>
+                
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#projects" class="btn btn-outline">View Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="about-bg-decoration"></div>
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-intro">A bit about who I am and what drives my work.</p>
+                <div class="about-pills">
+                    <span class="about-pill"><i class="fas fa-code"></i> Developer</span>
+                    <span class="about-pill"><i class="fas fa-comments"></i> Communication</span>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-accent"></div>
+                    <div class="about-content">
+                        <p class="about-lead">I am a full stack software engineer experienced in building websites for small and medium-sized businesses. Whether you are trying to win work, list your services, or create a new online store, I can help.</p>
+                        <p>Knows HTML, CSS, Django and Python Full project management from start to finish. Regular communication is important to me, so let us keep in touch.</p>
+                        <blockquote class="about-quote">Let's build something that matters.</blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="deliverables" class="section deliverables">
+            <div class="container">
+                <h2 class="section-title">What I Deliver</h2>
+                <p class="section-intro">Custom solutions built for real business needs.</p>
+                <div class="deliverables-grid">
+                    <div class="deliverable-item"><i class="fas fa-check"></i> Custom Business Websites</div>
+                    <div class="deliverable-item"><i class="fas fa-check"></i> E-Commerce Platforms</div>
+                    <div class="deliverable-item"><i class="fas fa-check"></i> Booking &amp; Reservation Systems</div>
+                    <div class="deliverable-item"><i class="fas fa-check"></i> School &amp; Organization Management Systems</div>
+                    <div class="deliverable-item"><i class="fas fa-check"></i> Admin Dashboards</div>
+                    <div class="deliverable-item"><i class="fas fa-check"></i> REST APIs</div>
+                    <div class="deliverable-item"><i class="fas fa-check"></i> Business Automation Tools</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-intro">A selection of websites I've built for clients.</p>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <a href="https://youthsat.org/" target="_blank" rel="noopener noreferrer" class="project-image-link">
+                            <img src="{% static 'kong/images/ysat.png' %}" alt="Youth Social Advocacy Team website" class="project-image">
+                        </a>
+                        <div class="project-content">
+                            <h3>Youth Social Advocacy Team (YSAT)</h3>
+                            <p>Refugee-led non-profit NGO website working in Uganda and South Sudan. Features Programs, Partnerships, About, Publications, Jobs, and Get in Touch. Protection, Food Security & Livelihood, and Education programs with donation functionality.</p>
+                            <a href="https://youthsat.org/" target="_blank" rel="noopener noreferrer" class="project-link">View live site <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <a href="https://rchafrica.com" target="_blank" rel="noopener noreferrer" class="project-image-link">
+                            <img src="{% static 'kong/images/reach-africa.png' %}" alt="REACH Africa website" class="project-image">
+                        </a>
+                        <div class="project-content">
+                            <h3>REACH Africa</h3>
+                            <p>Website for a skills development and community growth organization. Features digital training programs, training hub, and donation system. Built with responsive design for learners across Uganda.</p>
+                            <a href="https://rchafrica.com" target="_blank" rel="noopener noreferrer" class="project-link">View live site <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image-link">
+                            <img src="{% static 'kong/images/society-money-transfer.png' %}" alt="Society Association Money Transfer website" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3>Society Association Money Transfer</h3>
+                            <p>Professional website for a financial services organization offering safe, fast money transfers. Includes branch locator, staff login, services overview, and news & updates sections.</p>
+                            <span class="project-link">Financial services website</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="expertise" class="section expertise">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, Responsive Design</p>
+                    </div>
+                    <div class="expertise-card">
+                        <h3>Backend</h3>
+                        <p>Django, Python</p>
+                    </div>
+                    <div class="expertise-card">
+                        <h3>Database</h3>
+                        <p>PostgreSQL, SQLite</p>
+                    </div>
+                    <div class="expertise-card">
+                        <h3>Deployment &amp; Tools</h3>
+                        <p>Git, Linux servers, VPS deployment</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title skills-title">Skills &amp; Experience</h2>
+                <div class="skills-grid">
+                    <div class="skills-column">
+                        <h3 class="skills-subtitle">Technical Skills</h3>
+                        <div class="skill-row">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-value">80%</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name">Django</span>
+                            <span class="skill-value">85%</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name">HTML / CSS</span>
+                            <span class="skill-value">90%</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-value">80%</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skills-column">
+                        <h3 class="skills-subtitle">Soft Skills</h3>
+                        <div class="skill-row">
+                            <span class="skill-name">Problem Solving</span>
+                            <span class="skill-value">90%</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name">Team Leadership</span>
+                            <span class="skill-value">85%</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name">Communication</span>
+                            <span class="skill-value">90%</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name">Project Management</span>
+                            <span class="skill-value">80%</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name">Adaptability</span>
+                            <span class="skill-value">85%</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-name">Collaboration</span>
+                            <span class="skill-value">85%</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <p class="section-intro">Formal training and academic background.</p>
+                <div class="education-list">
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="education-content">
+                            <h3>Backend Software Engineering</h3>
+                            <p>ALX Africa</p>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="education-content">
+                            <h3>Advanced Software Engineering</h3>
+                            <p>Refactory</p>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="education-content">
+                            <h3>Certificate of Software Engineering</h3>
+                            <p>Refactory</p>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fas fa-school"></i></div>
+                        <div class="education-content">
+                            <h3>Certificate of Secondary Education</h3>
+                            <p>Mat Secondary School</p>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="education-content">
+                            <h3>Primary Leaving Examination</h3>
+                            <p>Orawa Primary School</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section experience">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-intro">Professional roles and community leadership.</p>
+                <div class="experience-list">
+                    <article class="experience-item">
+                        <div class="experience-header">
+                            <h3>Co-Founder and Program Coordinator</h3>
+                            <p class="experience-org">Youth Action for Community Transformation (YACOT)</p>
+                            <p class="experience-date">July 2020 – Present</p>
+                        </div>
+                        <ul class="experience-duties">
+                            <li>Liaise with partner organizations and individuals to help develop new community partnerships.</li>
+                            <li>Develop a framework to include young people in the development of creative programs.</li>
+                            <li>Foster relationships with community members to help define programming needs and strengthen organizational standing in community.</li>
+                            <li>Oversee program development, coordination, and administration.</li>
+                            <li>Evaluate program performance against expectations.</li>
+                        </ul>
+                    </article>
+                    <article class="experience-item">
+                        <div class="experience-header">
+                            <h3>Field Officer</h3>
+                            <p class="experience-org">GiveDirectly</p>
+                            <p class="experience-date">February 2025 – March 2025</p>
+                        </div>
+                        <ul class="experience-duties">
+                            <li>Barazas: explain GiveDirectly's program to entire villages prior to the census surveys; answer any questions.</li>
+                            <li>Explain GiveDirectly's program to eligible households.</li>
+                            <li>Meet with village elders and guides to understand village boundaries.</li>
+                            <li>Coordinate with team members; visit every household in the village, excluding none.</li>
+                            <li>Complete census surveys using Taroworks with accurate data.</li>
+                        </ul>
+                    </article>
+                    <article class="experience-item">
+                        <div class="experience-header">
+                            <h3>West Nile Region Coordinator</h3>
+                            <p class="experience-org">Faces Up Uganda</p>
+                            <p class="experience-date">May 2023 – December 2023</p>
+                        </div>
+                        <ul class="experience-duties">
+                            <li>Coordinated art activities in schools across West Nile Region.</li>
+                            <li>Liaised with community leaders, parents, schools, and partner organizations to ensure children's participation in art activities.</li>
+                            <li>Reviewed and selected the best art materials for exhibitions.</li>
+                            <li>Coordinated the logistics and procurement of project materials.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="approach" class="section approach">
+            <div class="container">
+                <h2 class="section-title">My Approach</h2>
+                <p class="section-intro">I believe regular communication is key to successful projects. You will always know the progress of your work.</p>
+                <div class="approach-content">
+                    <div class="approach-item">
+                        <div class="approach-number">01</div>
+                        <h3>Clear Project Discovery</h3>
+                        <p>Requirement analysis to ensure we build exactly what you need.</p>
+                    </div>
+                    <div class="approach-item">
+                        <div class="approach-number">02</div>
+                        <h3>Structured Development</h3>
+                        <p>A disciplined process that keeps your project on track.</p>
+                    </div>
+                    <div class="approach-item">
+                        <div class="approach-number">03</div>
+                        <h3>Clean Code Architecture</h3>
+                        <p>Scalable, maintainable code built for growth.</p>
+                    </div>
+                    <div class="approach-item">
+                        <div class="approach-number">04</div>
+                        <h3>Testing &amp; Optimization</h3>
+                        <p>Quality assurance and performance tuning.</p>
+                    </div>
+                    <div class="approach-item">
+                        <div class="approach-number">05</div>
+                        <h3>Smooth Deployment</h3>
+                        <p>From development to production — handled professionally.</p>
+                    </div>
+                    <div class="approach-item">
+                        <div class="approach-number">06</div>
+                        <h3>Ongoing Support</h3>
+                        <p>Available when you need assistance after launch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="contact-bg"></div>
+            <div class="container">
+                <h2 class="section-title contact-title">Contact Me</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div>
+                                <strong>Address</strong>
+                                <p>Arua, Uganda</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p><a href="mailto:dhoalwanbangnyater99@gmail.com">dhoalwanbangnyater99@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <div>
+                                <strong>Telephone</strong>
+                                <p>+256 785 064 021</p>
+                            </div>
+                        </div>
+                        <div class="contact-upwork">
+                            <a href="https://www.upwork.com/freelancers/~019ae3d3cf3079e139?mp_source=share" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                <i class="fab fa-upwork"></i>
+                                Hire on Upwork
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <h3>Send a Message</h3>
+                        <form class="contact-form" action="mailto:stephen@example.com" method="get" enctype="text/plain">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" name="first" placeholder="First Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="last" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="body" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Stephen Dhoal Mathew Wanbang. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+                document.querySelector('.nav-toggle').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
