@@ -835,6 +835,25 @@ body {
     margin-top: 0.5rem;
 }
 
+.form-success {
+    padding: 1.5rem;
+    background: rgba(45, 90, 74, 0.1);
+    border-radius: var(--radius);
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.form-success p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-success i {
+    font-size: 1.25rem;
+}
+
 .footer {
     padding: 2rem 0;
     border-top: 1px solid rgba(0, 0, 0, 0.06);
@@ -1269,20 +1288,26 @@ body {
                     </div>
                     <div class="contact-form-wrapper">
                         <h3>Send a Message</h3>
-                        <form class="contact-form" action="mailto:dhoalwanbangnyater99@gmail.com" method="get" enctype="text/plain">
+                        <div id="form-success" class="form-success" style="display: none;">
+                            <p><i class="fas fa-check-circle"></i> Thanks! Your message was sent. I'll get back to you soon.</p>
+                        </div>
+                        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="585e3789-4c75-480e-a581-82d9c8bd9bb5">
+                            <input type="hidden" name="subject" value="New message from portfolio contact form">
+                            <input type="hidden" name="redirect" value="./?sent=1#contact">
                             <div class="form-row">
                                 <div class="form-group">
-                                    <input type="text" name="first" placeholder="First Name" required>
+                                    <input type="text" name="first_name" placeholder="First Name" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="last" placeholder="Last Name" required>
+                                    <input type="text" name="last_name" placeholder="Last Name" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <input type="email" name="email" placeholder="Your Email" required>
                             </div>
                             <div class="form-group">
-                                <textarea name="body" placeholder="Your Message" rows="5" required></textarea>
+                                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-large">Send Message</button>
                         </form>
@@ -1310,6 +1335,15 @@ body {
                 document.querySelector('.nav-toggle').classList.remove('active');
             });
         });
+        // Show success message after form submission
+        if (window.location.search === '?sent=1') {
+            var form = document.querySelector('.contact-form');
+            var success = document.getElementById('form-success');
+            if (form && success) {
+                form.style.display = 'none';
+                success.style.display = 'block';
+            }
+        }
     </script>
 </body>
 </html>
