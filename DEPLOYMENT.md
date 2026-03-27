@@ -18,7 +18,7 @@ GitHub Pages requires an **`index.html`** file at the root of your site. When yo
 2. **Copy these files** into the repo root:
    - `index.html` (required at root)
    - `portfolio-standalone.html` (optional backup)
-   - `images/` folder with: `profile.png`, `reach-africa.png`, `society-money-transfer.png`, `ysat.png`
+   - `images/` folder with: `profile.png`, `reach-africa.png`, `society-money-transfer.png`, `mayondo-wood-furniture.png`
    - `.nojekyll` (empty file)
 
 3. **Do NOT include** in the repo:
@@ -41,7 +41,7 @@ your-repo/
     ├── profile.png
     ├── reach-africa.png
     ├── society-money-transfer.png
-    └── ysat.png
+    └── mayondo-wood-furniture.png
 ```
 
 ### If Using This Repo (my_portfolio_tech) Directly
